@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Olga Igabe</title>
+</head>
+<body>
+  <header>
+    <h1>Olga Igabe</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Fields marked * are required.</p>
+
+      <form action="thank-you.html" method="get">
+        <fieldset>
+          <legend>Your details</legend>
+
+          <p>
+            <label for="full-name">Full name *</label>
+            <input type="text" id="full-name" name="full-name"
+                   required minlength="2" autocomplete="name">
+          </p>
+
+          <p>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email"
+                   required autocomplete="email">
+          </p>
+
+          <p>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9+ ]{10,15}" autocomplete="tel">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your message</legend>
+
+          <p>
+            <label for="topic">Topic *</label>
+            <select id="topic" name="topic" required>
+              <option value="">Choose a topic</option>
+              <option value="collaboration">Project collaboration</option>
+              <option value="mentorship">Mentorship</option>
+              <option value="question">General question</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5"
+                      required minlength="10"></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Send me updates about my projects</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Send message</button>
+          <button type="reset">Clear form</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Olga Igabe. Built during SheCanCode Week 2, Day 1.</p>
+  </footer>
+</body>
+</html>
